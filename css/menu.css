@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face/*para incluir la familia chalet */
+{
+	font-family: "Chalet";/*mla familia de fuente */	
+	src: url("../fonts/Chalet.eot");/*para subir la fuente*/
+	src: url("../fonts/Chalet.eot?#iefix")format("embedded-opentype"),
+	   url("../fonts/Chalet.woff")format("woff"),
+	   url("../fonts/Chalet.ttf")format("truetype"),
+	   url("../fonts/Chalet.svg#Chalet")format("svg");/*para que sepuedan ver las fuentes en cualquier navegador */
+}
+
+body
+{
+	background: #CACACA;
+	color: #00C;/*color de la tipografia */
+	font-family: "Chalet", Helvetica, Verdana;/*para definir el tipo de fuente */
+	/*font-size: 16px;  para definir el tamaño de fuente*/
+	font-size:62.5%;
+}
+ 
+h1
+{
+	font:normal 2.5em Verdana, Geneva, sans-serif;
+	background:-webkit-linear-gradient(top, #006, #6CF);
+	width:35%;
+	border-radius:10px;
+	margin:15px auto;
+	text-align:center;
+	padding:15px;
+	color: #FFF;
+	box-shadow:#06F 5px 10px 10px;
+	text-shadow:#CCC 2px 2px 3px;	
+}
+
+h2
+{
+	font:bold 1.9em Verdana, Geneva, sans-serif;
+	margin:0;
+	padding:5px 0 5px 0px;
+	color: #00C;
+}
+	
+section 
+{
+	width: 90%;
+	border-top: 1px dashed #333333;
+	margin: 15px auto;
+	text-align: center;
+	font-weight: bold;	
+}
+
+figure
+{
+	float: left;
+	margin-left: 25px;	
+}
+
+figure img
+{/*selector desendiente aplicar estilo a la etiqueta figure pero que contengan a demas la etiqueta hija img*/
+     padding:3px; /*aplicar borde*/
+     background:#666;
+     border-radius:10px;
+     -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+     box-shadow:#999 5px 5px 10px;
+	}
+/*se aplica una seudo clase para dar efectos cuando se pasa el maus sobre una imagen "seudoclase figure img:hover (hover: estado del objeto)"*/
+figure img:hover
+{
+	-webkit-transform:scale(1.2);
+}
+
+figcaption
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	text-align: center;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+footer/*romper el float */
+{
+	clear:both;
+	padding-top:100px;
+}
+
+footer p
+{	
+	font:1.6em Georgia, "Times New Roman", Times, serif;
+	color:#666;
+	margin:10px 8px;
+}
+
+.parrafo 
+{
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+	font-size: 2em;
+	color: #009 ;
+	font-weight: 600;
+}
+
+

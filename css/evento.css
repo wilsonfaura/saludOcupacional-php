@@ -1,0 +1,252 @@
+*
+{
+	border: 0; /* bordes a todos los elementos*/
+	margin: 0;  /*margenes para todos los elementos */
+}
+
+@font-face/*para incluir la familia chalet */
+{
+	font-family: "Chalet";/*mla familia de fuente */	
+	src: url("../fonts/Chalet.eot");/*para subir la fuente*/
+	src: url("../fonts/Chalet.eot?#iefix")format("embedded-opentype"),
+	   url("../fonts/Chalet.woff")format("woff"),
+	   url("../fonts/Chalet.ttf")format("truetype"),
+	   url("../fonts/Chalet.svg#Chalet")format("svg");/*para que sepuedan ver las fuentes en cualquier navegador */
+}
+
+a
+{
+	color: #900; /* color para los estilo */
+	text-decoration: none;/*para quitar la linea que tienen los enlaces*/
+}
+
+a:hover /*seudo elemento hover para cuando picamos sobre los enlaces */
+{
+	color: #181818; /*#39F;*/
+}
+
+body /*estilos al cuerpo de la pagina*/
+{
+	background: #DDD;/**/
+	color: #009;/*color de la tipografia */
+	font-family: "Chalet", Helvetica, Verdana;/*para definir el tipo de fuente */
+	font-size: 16px;/*para definir el tamaño de fuente*/
+}
+
+fieldset /*para enmarcar el formulario*/
+{
+	border: .1em solid #900;/*borde solido, linea naranja*/
+	border-radius: .5em;/*redondea los borde*/
+	padding: 1em;/*espacio del borde al texto*/
+}
+
+figure
+{
+	float: left;
+	margin-left: 1px;	
+}
+
+figure img
+{/*selector desendiente aplicar estilo a la etiqueta figure pero que contengan a demas la etiqueta hija img*/
+     padding:1px; /*aplicar borde*/
+     background:#666;
+     border-radius:10px;
+     -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+     box-shadow:#999 5px 5px 5px;
+	}
+/*se aplica una seudo clase para dar efectos cuando se pasa el maus sobre una imagen "seudoclase figure img:hover (hover: estado del objeto)"*/
+figure img:hover
+{
+	-webkit-transform:scale(1.08);
+}
+
+figcaption
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .6em;
+	text-align: center;
+	margin-top: 1px;
+	font-weight: bold;
+}
+
+form /*formulario*/
+{
+	display: none;/*para ver el formulario*/
+}
+
+form div/*cada elemento de formulario esta dentro de una div*/
+{	
+	margin: .3em; /*para darle espacio a los contenidos que estan dentro de las div*/
+}
+
+input[type="checkbox"], input[type="radio"],select
+{
+	background: #EEE;
+	cursor: pointer;
+}
+input[type="date"], input[type="email"],input[type="number"], input[type="text"]
+{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60;
+	font-size: 1em;
+	padding: .25em;
+}
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="text"]:focus
+{
+	background: #C6ECF9;
+}
+
+input[type="text"]:disabled
+{
+background: transparent;
+color: #CCC;	
+}
+input[type="file"] /*para esconder el boton de agregar archivo o foto*/
+{
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 150px;
+}
+
+input[type="submit"], input[type="reset"]
+{
+	background: #FF9A55;
+	border-radius: 0 .25em;
+	color: #500;
+	font-family: "Chalet";
+	font-size: 1.2em;
+}
+input[type="submit"]:hover 
+{
+	background: #7BBFD5;
+	border-radius:  .25em 0;
+	color: #000;
+	cursor: pointer;
+}
+
+input[type="reset"]:hover 
+{
+	background: #7BBFD5;
+	border-radius:  .25em 0;
+	color: #000;
+	cursor: pointer;
+}
+
+label /*para las etiquetas de tipo label*/
+{
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+legend
+{    
+	font-weight: bold;
+}
+
+nav, #principal
+{
+	-ms-box-sizing:border-box;/*los margenes y los rellenos estaran dentro del la definicion del ancho */
+	-moz-box-sizing:border-box;/*ademas se le colocan los prefijos para los diferentes navegadores (-ms,-moz,-o,-webkit)*/
+	-o-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;/*la etiqueta normalita por ultimo*/
+	display:inline-block;/*para que se alinien los dos */
+	font-size: 1em;/*equivalente a 16pix*/
+	margin: .25em;/*margenes*/
+	text-align: left;/*alineacion a la izquierda*/
+	width: 17%;
+	vertical-align: top;/*para que se suba todo el contenido*/	
+}
+
+table
+{
+	border: .1em solid #900;
+	border-radius: 1em;
+	cursor: default;
+	font-family: Helvetica, Verdana;
+	font-size: .75em;
+	padding: .25em;
+	width: 100%;
+}
+
+table img
+{
+	max-width: 100%;
+}
+
+table td
+{
+	border: .1em solid #900;
+	border-radius: .5em;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+table tr
+{
+	background: #CCF;
+}
+
+table thead tr
+{
+	background: transparent;
+}
+
+table tr:nth-child(even)
+{
+	background: #CFF;
+}
+
+ul
+{
+	list-style: none;/*para quitarle las viñetas de los enlaces*/
+}
+
+#contenido
+{    
+	color: #181818;
+	margin: o auto; /*la marguen o arribay abajo, automatico para que se centro*/
+	text-align: center;/*su contenido se centre*/
+	font-weight: bold;
+}
+
+#principal
+{	
+	width: 80%;/*que el ancho sea del 75% o dividr la pagina*/
+	font-weight: normal;
+}
+
+.adjuntar-archivo
+{
+		background: #EEE url(../imagenes/boton-buscar.png) no-repeat 0% -3px;	
+		border: thin solid #F60;
+		display: inline;
+		height: 290px;
+		text-align: right;		 
+}
+
+.adjuntar-archivo:hover
+{
+		background: #C6ECF9 url(../imagenes/boton-buscar2.png) no-repeat 100% -3px;	
+			 
+}	
+
+.cambio
+{
+	-ms-transition:all 2s ease-out;
+	-moz-transition:all 2s ease-out;
+	-o-transition:all 2s ease-out;
+	-webkit-transition:all 2s ease-out;
+	transition:all 2s ease-out; 
+}
+.mensaje
+	{
+		background: #06F;
+		border-radius: .5em;
+		color: #000;
+		font-family: Helvetica, Verdana;
+		font-size: 1em;
+		padding: .5em;
+	}

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body
+{
+	background: #FFF;
+	color: #009;
+	font-size: 16px;
+    font-family: Verdana, Geneva, sans-serif;/*para definir el tipo de fuente */
+	font-weight: bold;	
+}
+
+input[type="submit"]
+{
+	background: #7BBFD5;
+	border-radius: .25em;
+	color: #009;	
+	font-size: 1.2em;
+}
+input[type="submit"]:hover 
+{
+	background: #3C3;
+	border-radius:  .25em 0;
+	color: #33F;
+	cursor: pointer;
+}	
+
+label /*para las etiquetas de tipo label*/
+{
+	cursor: pointer;	
+}
+
+#apDiv1 
+{
+	position: absolute;
+	width: 268px;
+	height: 148px;
+	z-index: 1;
+	left: 379px;
+	top: 186px;
+}
+
+#apDiv2 
+{
+	position: absolute;
+	width: 272px;
+	height: 182px;
+	z-index: 2;
+	left: 663px;
+	top: 152px;
+}
+
+#apDiv3 
+{
+	position: absolute;
+	width: 299px;
+	height: 72px;
+	z-index: 3;
+	left: 498px;
+	top: 5px;
+	text-align: center;
+	font-style: italic;
+}	
+	
